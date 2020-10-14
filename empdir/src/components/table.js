@@ -2,34 +2,37 @@ import React from 'react';
 
 
 function tableSetUp(props){
+    console.log(props.employees)
 return (
-    <table class="table table-hover">
+    <SearchForm
+            handleFormSubmit={this.handleFormSubmit}
+            handleInputChange={this.handleInputChange}
+            name={this.state.name}
+          />
+    <table className="table table-hover">
   <thead>
+ 
     <tr>
       <th scope="col">ID</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
+      <th scope="col">Image</th>
+      <th scope="col">Name</th>
       <th scope="col">Phone</th>
       <th scope="col">Email</th>
       <th scope="col">Location</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th scope="row">ID</th>
-      <td>First</td>
-      <td>Last</td>
-      <td>Phone</td>
-      <td>Email</td>
-      <td>Location</td>
-    </tr>
     
+  <tr>  {props.employees( (ID, i) => <Item info={ID} key={"item-" + i} />)}
+</tr>
+          
     
   </tbody>
 </table>
+
+
 )
 }
-
 
 
 
