@@ -2,7 +2,7 @@
   "name": "empdir",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://abouelelas.github.io",
+  "homepage": "https://abouelelas.github.io/employee-directory",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
