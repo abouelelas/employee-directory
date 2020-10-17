@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
-import DataBody from "../DataBody/DataBody";
-import "./DataTable.css";
-import EmpDataContext from "../../utils/EmpDataContext";
+import DataBody from "./DataBody";
+import "../styles/DataTable.css";
+import EmpDataContext from "../utils/EmpDataContext";
 
 const DataTable = () => {
     const context = useContext(EmpDataContext);

@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
-import "./DataBody.css"
-import EmpDataContext from "../../utils/EmpDataContext";
+import "../styles/DataBody.css"
+import EmpDataContext from "../utils/EmpDataContext";
 
 const EmpData = () => {
     const context = useContext(EmpDataContext);
@@ -12,13 +12,13 @@ const EmpData = () => {
               <tr key={ID}>
                 <td data-th="Image" className="align-middle">
                   <img
-                    src={Image.medium}
-                    alt={"profile image for " + Name.first + " " + Name.last}
+                    src={Image}
+                    alt={"profile image for " + Name }
                     className="img-responsive"
                   />
                 </td>
                 <td data-th="Name" className="name-cell align-middle">
-                  {Name.first} {Name.last}
+                  {Name}
                 </td>
                 <td data-th="Phone" className="align-middle">
                   {Phone}

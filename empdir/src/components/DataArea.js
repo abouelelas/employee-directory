@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import DataTable from "/DataTable";
-import Nav from "/Nav";
+import DataTable from "./DataBody";
+import Nav from "./Nav";
 import API from "../utils/API";
-import "DataArea.css";
+import "../styles/DataArea.css";
 import DataAreaContext from "../utils/EmpDataContext";
 
 const DataArea = () => {
