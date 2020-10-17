@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
-// import "./DataBody.css"
-import empDataContext from "../utils/empDataContext";
+import "./DataBody.css"
+import EmpDataContext from "../../utils/EmpDataContext";
 
 const EmpData = () => {
-    const context = useContext(empDataContext);
+    const context = useContext(EmpDataContext);
     return (
         <tbody>
         {context.developerState.filteredUsers[0] !== undefined && context.developerState.filteredUsers[0].name !== undefined ? (

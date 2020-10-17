@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
-import "./SearchName.css";
-import DataAreaContext from "../../utils/DataAreaContext";
+//import "./SearchName.css";
+import DataAreaContext from "../utils/EmpDataContext";
 
 const SearchName = () => {
-    const context = useContext(empDataContext);
+    const context = useContext(DataAreaContext);
 
     return (
         <div className="searchbox">
