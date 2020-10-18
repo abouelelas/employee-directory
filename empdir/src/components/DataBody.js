@@ -17,6 +17,12 @@ const EmployeeData = (props) => {
   const data = {
     columns: [
       {
+        label: "Image",
+        field: "image",
+        sort: "asc",
+        width: 500,
+      },
+      {
         label: "Name",
         field: "name",
         sort: "asc",
@@ -25,12 +31,6 @@ const EmployeeData = (props) => {
       {
         label: "Email",
         field: "email",
-        sort: "asc",
-        width: 500,
-      },
-      {
-        label: "Image",
-        field: "image",
         sort: "asc",
         width: 500,
       },

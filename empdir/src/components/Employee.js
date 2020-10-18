@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
 import DataBody from "./DataBody";
-import SearchName from "./SearchName";
+import EmployeeStyle from "../styles/Employee.css";
 
 
 class Employee extends React.Component {
@@ -17,9 +17,9 @@ class Employee extends React.Component {
         console.log(empdata)
         for (let i = 0; i < empdata.length; i++) {
           let employee = {
+            image:<img src={empdata[i].picture.medium}></img> ,
             name: empdata[i].name.first + " " + empdata[i].name.last,
             email: empdata[i].email,
-            image: empdata[i].picture.medium,
             phone: empdata[i].cell,
             location: empdata[i].location.city,
           };
