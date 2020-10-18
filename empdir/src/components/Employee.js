@@ -1,7 +1,8 @@
 import React from "react";
 import axios from "axios";
 import DataBody from "./DataBody";
-import EmployeeStyle from "../styles/Employee.css";
+
+// import "../styles.EmployeeStyle.css";
 
 
 class Employee extends React.Component {
@@ -46,47 +47,3 @@ export default Employee;
 
 
 
-// import React, { useContext } from "react";
-// import DataBody from "./DataBody";
-// import "../styles/DataTable.css";
-// import EmpDataContext from "../utils/EmpDataContext";
-
-// const DataTable = () => {
-//     const context = useContext(EmpDataContext);
-
-//     return (
-
-//         <div className="datatable mt-5">
-//             <table
-//                 id="table"
-//                 className="table table-striped table-hover table-condensed"
-//             >
-//                 <thead>
-//                     <tr>
-                   
-//                         {context.developerState.headings.map(({ name, width }) => {
-//                             return (
-//                                 <th
-//                                     className="col"
-//                                     key={name}
-//                                     style={{ width }}
-//                                     onClick={() => {
-//                                         context.handleSort(name.toLowerCase());
-//                                     }}
-//                                 >
-//                                     {name}
-//                                     <span className="pointer"></span>
-//                                 </th>
-//                             );
-//                         })}
-//                     </tr>
-//                 </thead>
-//                 <DataTable data={this.state.filteredUsers} />
-//                 <DataBody />
-                
-//             </table>
-//         </div>
-//     );
-// }
-
-// export default DataTable;
