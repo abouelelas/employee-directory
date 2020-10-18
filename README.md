@@ -22,4 +22,4 @@ The application will able the user to sort and filter through the table.
 
 * (GitHub Repo)[https://github.com/abouelelas/employee-directory]
 
-![Screemshot](https://github.com/abouelelas/employee-directory/blob/main/empdir/EmployeeSS.png)
+![Screemshot](https://github.com/abouelelas/employee-directory/blob/main/EmployeeSS.png)
