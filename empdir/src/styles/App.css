@@ -32,6 +32,10 @@ header {
   justify-content: center;
   align-items: flex-start;
 }
+Jumbotron{
+margin-top: 10 px;
+background-color: blue;
+}
 h2{
   color:navy;
   padding-top: 20px;
